@@ -1,5 +1,7 @@
 package se.sprinto.hakan.messagesender;
 
+import java.util.List;
+
 public class Main {
 
     static void main() {
@@ -12,6 +14,12 @@ public class Main {
 
         printMessage(consoleSender);
         printMessage(fileMessageSender);
+
+        List<String> messages = List.of("One", "Two");
+
+        for (int i = 0; i < messages.size() + 1; i++) {
+            System.out.println(messages.get(i));
+        }
 
         //printMessageToFile(fileMessageSender);
 
